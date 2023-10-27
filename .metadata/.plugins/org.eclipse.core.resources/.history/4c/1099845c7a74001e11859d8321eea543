@@ -1,0 +1,24 @@
+package com.mycom.basic.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	
+	@RequestMapping("/")
+	public String home() {
+		return "home.html";
+	}
+	
+	@RequestMapping("/")
+	public String user() {
+		return "home.html";
+	}
+	
+	@RequestMapping("/")
+	public String board() {
+		return "home.html";
+	}
+}

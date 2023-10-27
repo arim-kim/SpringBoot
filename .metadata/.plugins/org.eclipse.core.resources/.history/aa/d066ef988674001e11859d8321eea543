@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>home.html</h1>
+	<a href="/user/userDashboard">dash borad</a>
+	<a href="/user/createAccount">dash borad</a>
+	<a href="/user/modifyAccount">dash borad</a>
+	<a href="/board/articleDetail">dash borad</a>
+	<a href="/board/articleList">dash borad</a>
+	<a href="/board/searchContentId">dash borad</a>
+	<a href="/board/writeArticle">dash borad</a>
+
+</body>
+</html>

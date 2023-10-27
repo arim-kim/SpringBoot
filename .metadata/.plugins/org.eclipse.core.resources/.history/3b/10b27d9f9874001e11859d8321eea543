@@ -1,0 +1,42 @@
+package com.mycom.mydb.dao;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import com.mycom.mydb.dto.StudentDto;
+
+public class StudentDaoImpl implements StudentDao {
+
+
+	@Override
+	public StudentDto studentDetail(int studentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<StudentDto> studentList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int studentInsert(StudentDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int studentUpdate(StudentDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int studentDelete(int studentId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

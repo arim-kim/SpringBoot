@@ -1,0 +1,57 @@
+package com.mycom.basic.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mycom.basic.dto.CarDto;
+
+@RestController
+public class ParamController {
+
+	@GetMapping("/param1")
+	public Map<String, String> m1(HttpServletRequest request) {
+		// 직접 request객체 사용
+		String seq = request.getParameter("seq");
+		System.out.println(seq);
+		Map<String, String> map = new HashMap<>();
+		map.put("result", "success");
+		return map;
+	}
+
+	@PostMapping("/car")
+	public Map<String, String> m2(CarDto dto) {
+		System.out.println(dto);
+		System.out.println("insert success");
+		Map<String, String> map = new HashMap<>();
+		map.put("result", "success");
+		return map;
+	}
+
+	@PostMapping("/car2")
+	public Map<String, String> m3(CarDto dto, HttpSession session) {
+		System.out.println(dto);
+		System.out.println("insert success");
+		session.setAttribute("carDto", dto);
+		Map<String, String> map = new HashMap<>();
+		map.put("result", "success");
+		return map;
+	}
+
+	@GetMapping("/car3")
+	public CarDto m4(HttpSession session) {
+		CarDto dto = (CarDto) session.getAttribute("carDto");
+		System.out.println(dto);
+		System.out.println("car detail success");
+		session.setAttribute("carDto", dto);	
+		return dto;
+	}
+	
+	
+}

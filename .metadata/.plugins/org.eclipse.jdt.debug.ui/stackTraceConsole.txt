@@ -1,0 +1,4 @@
+String seq = request.getParameter("seq");
+		System.out.println(seq);
+		Map<String, String> map = new HashMap<>();
+		map.put("result", "success");
