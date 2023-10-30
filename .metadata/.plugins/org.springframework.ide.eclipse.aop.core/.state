@@ -3,6 +3,8 @@
 <aop-project name="SpringBootBasic2"/>
 <aop-project name="SpringBootDB"/>
 <aop-project name="SpringBootStudent"/>
+<aop-project name="SpringBootDBMybatis"/>
 <aop-project name="SpringBootBasic"/>
 <aop-project name="springDB"/>
+<aop-project name="SpringDBMybatis"/>
 </aop-reference-model>
